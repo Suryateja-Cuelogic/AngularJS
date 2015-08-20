@@ -16,14 +16,27 @@
 </head>
 <body>
 
-  <div ng-controller="HelloController as hello">
-    <h1>{{ hello.data + ", Welcome to AngularJS" }}</h1>
-  </div>
+<header>
+  <ul class="menu">
+    <li><a href="#/home">Home</a></li>
+    <li><a href="#/about-us">AboutUs</a></li>
+    <li><a href="#/join-us">Careers</a></li>
+    <li><a href="#/cuelogic/clients">Clients</a></li>    
+  </ul>
+</header>
+    
   
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
+  <div ng-view></div>
+
+  <footer>
+    <ul class="menu">
+      <li><a href="#/terms-and-conditions">Terms & Conditions</a></li>
+    </ul>
+  </footer>
  
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
