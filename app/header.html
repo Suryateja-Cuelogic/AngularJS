@@ -2,5 +2,7 @@
    <li><a href="#/home">Home</a></li>
    <li><a href="#/about-us">AboutUs</a></li>
    <li><a href="#/join-us">Careers</a></li>
-   <li><a href="#/cuelogic/clients">Clients</a></li>    
+   <li><a href="#/cuelogic/clients">Clients</a></li>
+   <li ng-hide="token"><a href="#/login">Login</a></li>
+   <li ng-show="token"><a href ng-click="logout()">Logout</a></li>
 </ul>
