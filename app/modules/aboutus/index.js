@@ -1,0 +1,1 @@
+angular.module('aboutUs',['aboutus.controller', 'aboutus.route'])

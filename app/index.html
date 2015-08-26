@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="BlogApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="BlogApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="BlogApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="BlogApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="app" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="app.css">
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
-<body ng-controller="HomeController">
+<body>
 
-<header ng-include="'header.html'"></header>
+<header ng-include="'header.html'" ng-controller="loginCtrl"></header>
     
   
   <!--[if lt IE 7]>
@@ -34,6 +34,25 @@
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/ngstorage/ngStorage.min.js"></script>
   <script src="app.js"></script>
+  <script src="modules/home/index.js"></script>
+  <script src="modules/home/home.controller.js"></script>
+  <script src="modules/home/home.route.js"></script>
+  <script src="modules/aboutus/index.js"></script>
+  <script src="modules/aboutus/aboutus.controller.js"></script>
+  <script src="modules/aboutus/aboutus.route.js"></script>
+  <script src="modules/careers/index.js"></script>
+  <script src="modules/careers/careers.controller.js"></script>
+  <script src="modules/careers/careers.route.js"></script>
+  <script src="modules/clients/index.js"></script>
+  <script src="modules/clients/clients.controller.js"></script>
+  <script src="modules/clients/clients.route.js"></script>
+  <script src="modules/toc/index.js"></script>
+  <script src="modules/toc/toc.controller.js"></script>
+  <script src="modules/toc/toc.route.js"></script>
+  <script src="modules/login/index.js"></script>
+  <script src="modules/login/login.controller.js"></script>
+  <script src="modules/login/login.route.js"></script>
+  <script src="modules/login/login.service.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>

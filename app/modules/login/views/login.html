@@ -1,0 +1,17 @@
+<h3>Welcome to Login</h3>
+
+<div ng-controller="loginCtrl">
+	<div class="error">{{ errorMessage }}</div>
+	<form name="LoginForm" ng-submit="LoginForm.$valid && checkLogin()" novalidate>
+		<div>
+			<label>Username: </label><input type="email" name="username" ng-model="username" required>
+			<p class="error" ng-show="LoginForm.username.$touched && LoginForm.username.$error.required">Username is required</p>
+			<p class="error" ng-show="LoginForm.username.$error.email">Not a valid email!</p>
+		</div><br>
+		<div>	
+			<label>Password: </label><input type="password" name="password" ng-model="password" required>
+			<p class="error" ng-show="LoginForm.password.$touched && LoginForm.password.$error.required">Password is required</p>	
+		</div><br>		
+		<input type="Submit" ng-disabled="LoginForm.$invalid" value="Login">
+	</form>
+</div>
